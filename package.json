@@ -1,0 +1,13 @@
+{
+    "name": "BCGov-SMK-App",
+    "version": "0.0.1",
+    "description": "My Simple Map Kit Application For BC Gov",
+    "author": "Ashima Adya",
+    "dependencies": {
+        "@bcgov/smk": "1.1.9",
+        "http-server": "^0.12.3"
+    },
+    "scripts": {
+        "view": "http-server -o -c-1"
+    }
+}

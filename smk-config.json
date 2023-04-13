@@ -1,0 +1,125 @@
+
+{
+    "version": "1.1.9",
+    "name": "BCGov-SMK-App",
+    "createdBy": "Ashima Adya",
+    "createdDate": "2023-04-13T05:48:57.158Z",
+    "viewer": {
+        "type": "leaflet",
+        "location": {
+            "extent": [
+                -140.80078125000004,
+                61.62728646147466,
+                -108.72070312500002,
+                46.13417004624326
+            ],
+            "center": [
+                -124.76074218750003,
+                51.88072825385896
+            ],
+            "zoom": 6.0
+        },
+        "esriApiKey": "AAPKd0b70104581042f58e2017ca7486906aXRgRyRjuXbE3aHG7DMWfIXFfs1UfKRlU9NTD4k4jop4Tc5OX_r5O6G5ykfVQKhhy",
+        "baseMap": "Topographic"
+    },
+    "tools": [
+        {
+            "type": "toolbar",
+            "enabled": true
+        },
+        {
+            "type": "list-menu",
+            "enabled": true,
+            "title": "MY SMK APplication"
+        },
+        {
+            "type": "pan",
+            "enabled": true
+        },
+        {
+            "type": "zoom",
+            "enabled": true
+        },
+        {
+            "type": "about",
+            "enabled": true,
+            "title": "About MY SMK APplication",
+            "position": "list-menu",
+            "content": "<p>Welcome to SMK!</p><p>My Simple Map Kit Application For BC Gov</p>"
+        },
+        {
+            "type": "layers",
+            "enabled": true
+        },
+        {
+            "type": "baseMaps",
+            "enabled": false
+        },
+        {
+            "type": "identify",
+            "enabled": true,
+            "showPanel": true,
+            "showWidget": true,
+            "style": {
+                "strokeWidth": 1.0,
+                "strokeStyle": "1, 1",
+                "strokeColor": "#000000",
+                "strokeOpacity": 0.8,
+                "fillColor": "#000000",
+                "fillOpacity": 0.5,
+                "markerSize": [
+                    20,
+                    20
+                ],
+                "markerOffset": [
+                    10,
+                    0
+                ]
+            }
+        },
+        {
+            "type": "search",
+            "enabled": true
+        },
+        {
+            "type": "coordinate",
+            "enabled": true
+        },
+        {
+            "type": "measure",
+            "enabled": true
+        },
+        {
+            "type": "markup",
+            "enabled": true
+        },
+        {
+            "type": "scale",
+            "enabled": true
+        },
+        {
+            "type": "minimap",
+            "enabled": true
+        },
+        {
+            "type": "directions",
+            "enabled": true
+        },
+        {
+            "type": "location",
+            "enabled": true
+        },
+        {
+            "type": "select",
+            "enabled": true
+        },
+        {
+            "type": "geomark",
+            "geomarkService": {
+                "url": "https://apps.gov.bc.ca/pub/geomark"
+            },
+            "position": "list-menu",
+            "enabled": true
+        }
+    ]
+}
