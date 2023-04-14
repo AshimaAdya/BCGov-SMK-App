@@ -1,27 +1,140 @@
-
 {
-    "version": "1.1.9",
     "name": "BCGov-SMK-App",
-    "createdBy": "Ashima Adya",
-    "createdDate": "2023-04-13T05:48:57.158Z",
     "viewer": {
         "type": "leaflet",
         "location": {
-            "extent": [
-                -140.80078125000004,
-                61.62728646147466,
-                -108.72070312500002,
-                46.13417004624326
-            ],
             "center": [
-                -124.76074218750003,
-                51.88072825385896
+                -122.82200390595928,
+                53.64205785028009
             ],
-            "zoom": 6.0
+            "extent": [
+                -141.65539974049094,
+                41.86561013791489,
+                -103.98860807142765,
+                62.853594698013154
+            ],
+            "zoom": 4.860258191833205
         },
         "esriApiKey": "AAPKd0b70104581042f58e2017ca7486906aXRgRyRjuXbE3aHG7DMWfIXFfs1UfKRlU9NTD4k4jop4Tc5OX_r5O6G5ykfVQKhhy",
         "baseMap": "Topographic"
     },
+    "layers": [
+        {
+            "id": "special-protection-areas",
+            "title": "Special Protection Areas - All - Colour Filled",
+            "type": "esri-dynamic",
+            "source": {
+                "type": "geojson",
+                "url": "https://openmaps.gov.bc.ca/geo/pub/WHSE_ADMIN_BOUNDARIES.FADM_SPECIAL_PROTECTION_AREA/wms?service=WMS&request=getcapabilities"
+            },
+            "style": {
+                "fill": {
+                    "color": "rgba(255, 165, 0, 0.5)"
+                },
+                "stroke": {
+                    "color": "rgba(0, 0, 0, 0.8)",
+                    "width": 1
+                }
+            },
+            "isVisible": true,
+            "isQueryable": true,
+            "opacity": "0.6",
+            "queries": [],
+            "scaleMax": 89700000
+        },
+        {
+            "id": "forest-development-units",
+            "title": "Forest Development Units (1417)",
+            "type": "wms",
+            "source": {
+                "type": "wms",
+                "url": "https://your-wms-service-url",
+                "layers": "forest_development_units"
+            },
+            "params": {
+                "version": "1.3.0",
+                "format": "image/png",
+                "transparent": true,
+                "cql_filter": "FDU_ID=1417"
+            },
+            "isVisible": true,
+            "isQueryable": true,
+            "opacity": "0.55",
+            "serviceUrl": "",
+            "layerName": ""
+        },
+        {
+            "type": "wms",
+            "id": "pub-whse-environmental-monitoring-ems-monitoring-locn-groups-svw--3269",
+            "title": "BC Environmental Monitoring Location Groups ( 3269 )",
+            "isVisible": true,
+            "isQueryable": true,
+            "opacity": "0.6",
+            "minScale": null,
+            "maxScale": null,
+            "titleAttribute": null,
+            "attributes": [
+                {
+                    "id": "monitoring-group-id",
+                    "name": "MONITORING_GROUP_ID",
+                    "title": "MONITORING GROUP ID",
+                    "visible": true
+                },
+                {
+                    "id": "description",
+                    "name": "DESCRIPTION",
+                    "title": "DESCRIPTION",
+                    "visible": true
+                },
+                {
+                    "id": "group-name",
+                    "name": "GROUP_NAME",
+                    "title": "GROUP NAME",
+                    "visible": true
+                },
+                {
+                    "id": "office-cd",
+                    "name": "OFFICE_CD",
+                    "title": "OFFICE CD",
+                    "visible": true
+                },
+                {
+                    "id": "aems-tag",
+                    "name": "AEMS_TAG",
+                    "title": "AEMS TAG",
+                    "visible": true
+                },
+                {
+                    "id": "feature-code",
+                    "name": "FEATURE_CODE",
+                    "title": "FEATURE CODE",
+                    "visible": true
+                },
+                {
+                    "id": "geometry",
+                    "name": "GEOMETRY",
+                    "title": "GEOMETRY",
+                    "visible": true
+                },
+                {
+                    "id": "objectid",
+                    "name": "OBJECTID",
+                    "title": "OBJECTID",
+                    "visible": true
+                },
+                {
+                    "id": "se-anno-cad-data",
+                    "name": "SE_ANNO_CAD_DATA",
+                    "title": "SE ANNO CAD DATA",
+                    "visible": true
+                }
+            ],
+            "queries": null,
+            "serviceUrl": "https://openmaps.gov.bc.ca/geo/pub/wms",
+            "layerName": "pub:WHSE_ENVIRONMENTAL_MONITORING.EMS_MONITORING_LOCN_GROUPS_SVW",
+            "styleName": "3269"
+        }
+    ],
     "tools": [
         {
             "type": "toolbar",
@@ -30,7 +143,7 @@
         {
             "type": "list-menu",
             "enabled": true,
-            "title": "MY SMK APplication"
+            "title": "MY SMK Application"
         },
         {
             "type": "pan",
@@ -48,8 +161,39 @@
             "content": "<p>Welcome to SMK!</p><p>My Simple Map Kit Application For BC Gov</p>"
         },
         {
+            "order": 3,
+            "position": [
+                "shortcut-menu",
+                "list-menu"
+            ],
+            "icon": "layers",
+            "title": "Layers",
+            "command": {
+                "allVisibility": true,
+                "filter": true,
+                "legend": true
+            },
+            "glyph": {
+                "visible": "visibility",
+                "hidden": "visibility_off"
+            },
             "type": "layers",
-            "enabled": true
+            "enabled": true,
+            "showTitle": true,
+            "display": [
+                {
+                    "id": "special-protection-areas",
+                    "alwaysShowLegend": true
+                },
+                {
+                    "id": "forest-development-units",
+                    "alwaysShowLegend": true
+                },
+                {
+                    "id": "pub-whse-environmental-monitoring-ems-monitoring-locn-groups-svw--3269",
+                    "isVisible": true
+                }
+            ]
         },
         {
             "type": "baseMaps",
@@ -61,7 +205,7 @@
             "showPanel": true,
             "showWidget": true,
             "style": {
-                "strokeWidth": 1.0,
+                "strokeWidth": 1,
                 "strokeStyle": "1, 1",
                 "strokeColor": "#000000",
                 "strokeOpacity": 0.8,
@@ -121,5 +265,8 @@
             "position": "list-menu",
             "enabled": true
         }
-    ]
+    ],
+    "version": "1.1.9",
+    "createdBy": "Ashima Adya",
+    "createdDate": "2023-04-13T05:48:57.158Z"
 }
