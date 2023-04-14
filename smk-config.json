@@ -4,44 +4,21 @@
         "type": "leaflet",
         "location": {
             "center": [
-                -122.82200390595928,
-                53.64205785028009
+                -129.1449602292429,
+                56.71788887305929
             ],
             "extent": [
-                -141.65539974049094,
-                41.86561013791489,
-                -103.98860807142765,
-                62.853594698013154
+                -135.66097158326943,
+                53.220734775748404,
+                -122.62894887521638,
+                59.91760804376832
             ],
-            "zoom": 4.860258191833205
+            "zoom": 6.391490323581428
         },
         "esriApiKey": "AAPKd0b70104581042f58e2017ca7486906aXRgRyRjuXbE3aHG7DMWfIXFfs1UfKRlU9NTD4k4jop4Tc5OX_r5O6G5ykfVQKhhy",
         "baseMap": "Topographic"
     },
     "layers": [
-        {
-            "id": "special-protection-areas",
-            "title": "Special Protection Areas - All - Colour Filled",
-            "type": "esri-dynamic",
-            "source": {
-                "type": "geojson",
-                "url": "https://openmaps.gov.bc.ca/geo/pub/WHSE_ADMIN_BOUNDARIES.FADM_SPECIAL_PROTECTION_AREA/wms?service=WMS&request=getcapabilities"
-            },
-            "style": {
-                "fill": {
-                    "color": "rgba(255, 165, 0, 0.5)"
-                },
-                "stroke": {
-                    "color": "rgba(0, 0, 0, 0.8)",
-                    "width": 1
-                }
-            },
-            "isVisible": true,
-            "isQueryable": true,
-            "opacity": "0.6",
-            "queries": [],
-            "scaleMax": 89700000
-        },
         {
             "id": "forest-development-units",
             "title": "Forest Development Units (1417)",
@@ -60,8 +37,9 @@
             "isVisible": true,
             "isQueryable": true,
             "opacity": "0.55",
-            "serviceUrl": "",
-            "layerName": ""
+            "serviceUrl": "https://openmaps.gov.bc.ca/geo/wms",
+            "layerName": "pub:WHSE_FOREST_TENURE.FSP_FDU_POLY_SPG",
+            "styleName": "1417"
         },
         {
             "type": "wms",
@@ -133,6 +111,157 @@
             "serviceUrl": "https://openmaps.gov.bc.ca/geo/pub/wms",
             "layerName": "pub:WHSE_ENVIRONMENTAL_MONITORING.EMS_MONITORING_LOCN_GROUPS_SVW",
             "styleName": "3269"
+        },
+        {
+            "type": "esri-dynamic",
+            "id": 5701,
+            "title": "Special Protection Areas - All - Colour Filled",
+            "isVisible": true,
+            "isQueryable": true,
+            "opacity": "0.45",
+            "minScale": 6000000,
+            "maxScale": 0,
+            "titleAttribute": null,
+            "attributes": [
+                {
+                    "name": "FEATURE_ID",
+                    "title": "Feature ID",
+                    "visible": true
+                },
+                {
+                    "name": "FOREST_FILE_ID",
+                    "title": "Forest File ID",
+                    "visible": false
+                },
+                {
+                    "name": "DESIGNATED_AREA",
+                    "title": "Designated Area",
+                    "visible": true
+                },
+                {
+                    "name": "FEATURE_CODE",
+                    "title": "Feature Code",
+                    "visible": true
+                },
+                {
+                    "name": "OIC_YEAR",
+                    "title": "OIC Year",
+                    "visible": false
+                },
+                {
+                    "name": "OIC_NUMBER",
+                    "title": "OIC Number",
+                    "visible": false
+                },
+                {
+                    "name": "PROTECTED_AREA_STRATEGY",
+                    "title": "Protected Area Strategy",
+                    "visible": true
+                },
+                {
+                    "name": "MAP_BLOCK_ID",
+                    "title": "MAP_BLOCK_ID",
+                    "visible": false
+                },
+                {
+                    "name": "PROTECTED_AREA_NAME",
+                    "title": "Protected Area Name",
+                    "visible": true
+                },
+                {
+                    "name": "PROTECTED_AREA_TYPE",
+                    "title": "Protected Area Type",
+                    "visible": true
+                },
+                {
+                    "name": "PROTECTED_AREA_STATUS",
+                    "title": "Protected Area Status",
+                    "visible": true
+                },
+                {
+                    "name": "AREA_SIZE",
+                    "title": "AREA_SIZE",
+                    "visible": false
+                },
+                {
+                    "name": "EFFECTIVE_DATE",
+                    "title": "Effective Date",
+                    "visible": false
+                },
+                {
+                    "name": "RETIREMENT_DATE",
+                    "title": "Retirement Date",
+                    "visible": true
+                },
+                {
+                    "name": "COMMENTS",
+                    "title": "COMMENTS",
+                    "visible": false
+                },
+                {
+                    "name": "WHO_UPDATED",
+                    "title": "WHO_UPDATED",
+                    "visible": false
+                },
+                {
+                    "name": "WHEN_UPDATED",
+                    "title": "WHEN_UPDATED",
+                    "visible": false
+                },
+                {
+                    "name": "FEATURE_CLASS_SKEY",
+                    "title": "FEATURE_CLASS_SKEY",
+                    "visible": false
+                },
+                {
+                    "name": "OBJECT_VERSION_SKEY",
+                    "title": "Object Version SKEY",
+                    "visible": true
+                },
+                {
+                    "name": "GEOMETRY",
+                    "title": "GEOMETRY",
+                    "visible": true
+                },
+                {
+                    "name": "OBJECTID",
+                    "title": "OBJECTID",
+                    "visible": true
+                },
+                {
+                    "name": "SE_ANNO_CAD_DATA",
+                    "title": "SE_ANNO_CAD_DATA",
+                    "visible": false
+                },
+                {
+                    "name": "FEATURE_AREA_SQM",
+                    "title": "Area Square Meters",
+                    "visible": true
+                },
+                {
+                    "name": "FEATURE_LENGTH_M",
+                    "title": "Perimeter Meters",
+                    "visible": true
+                },
+                {
+                    "name": "GEOMETRY.AREA",
+                    "title": "GEOMETRY.AREA",
+                    "visible": false
+                },
+                {
+                    "name": "GEOMETRY.LEN",
+                    "title": "GEOMETRY.LEN",
+                    "visible": false
+                }
+            ],
+            "queries": null,
+            "mpcmId": "5701",
+            "mpcmWorkspace": "MPCM_ALL_PUB",
+            "serviceUrl": "https://maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgw/MapServer",
+            "dynamicLayers": [
+                "{\"id\":5701,\"minScale\":6000000,\"maxScale\":0,\"source\":{\"type\":\"dataLayer\",\"dataSource\":{\"type\":\"table\",\"workspaceId\":\"MPCM_ALL_PUB\",\"dataSourceName\":\"WHSE_ADMIN_BOUNDARIES.FADM_SPECIAL_PROTECTION_AREA\",\"gdbVersion\":\"\"}},\"drawingInfo\":{\"renderer\":{\"type\":\"simple\",\"symbol\":{\"type\":\"esriSFS\",\"style\":\"esriSFSSolid\",\"color\":[255,153,0,255],\"outline\":{\"type\":\"esriSLS\",\"style\":\"esriSLSNull\",\"color\":[52,52,52,255],\"width\":0}},\"label\":\"\",\"description\":\"\"},\"transparency\":0,\"labelingInfo\":null}}"
+            ],
+            "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/f23f2f3b-c5c1-4cee-a446-c84c53e1d4b6"
         }
     ],
     "tools": [
@@ -182,16 +311,17 @@
             "showTitle": true,
             "display": [
                 {
-                    "id": "special-protection-areas",
-                    "alwaysShowLegend": true
-                },
-                {
                     "id": "forest-development-units",
-                    "alwaysShowLegend": true
+                    "alwaysShowLegend": true,
+                    "isVisible": true
                 },
                 {
                     "id": "pub-whse-environmental-monitoring-ems-monitoring-locn-groups-svw--3269",
                     "isVisible": true
+                },
+                {
+                    "id": 5701,
+                    "isVisible": false
                 }
             ]
         },
