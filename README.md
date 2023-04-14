@@ -37,5 +37,9 @@ You should now see the customized map with the specified layers.
 ## Screenshots
 
 Please find the screenshots of the customized map in the `screenshots` folder.
+![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 3](screenshots/screenshot3.png)
+
 
 
