@@ -21,7 +21,7 @@ To run this application, you will need:
 https://github.com/AshimaAdya/BCGov-SMK-App.git
 
 2. Navigate to the project folder:
-cd <project-folder>
+cd `<project-folder>`
 
 3. Replace the placeholder `<your-api-key>` in the `smk-config.json` file with your ESRI Developer API key.
 
